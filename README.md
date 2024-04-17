@@ -8,9 +8,9 @@
 若要求高精确度，参见 [OpenCC](https://github.com/BYVoid/OpenCC) 和 [opencc-python](https://pypi.python.org/pypi/opencc-python)。
 
 ```pycon
->>> print(convert(u'我幹什麼不干你事。', 'zh-cn'))
+>>> print(zhconv.convert(u'我幹什麼不干你事。', 'zh-cn'))
 我干什么不干你事。
->>> print(convert(u'人体内存在很多微生物', 'zh-tw'))
+>>> print(zhconv.convert(u'人体内存在很多微生物', 'zh-tw'))
 人體內存在很多微生物
 ```
 
@@ -19,13 +19,13 @@
 完整支持 MediaWiki 人工转换语法：
 
 ```pycon
->>> print(convert_for_mw(u'在现代，机械计算-{}-机的应用已经完全被电子计算-{}-机所取代', 'zh-hk'))
+>>> print(zhconv.convert_for_mw(u'在现代，机械计算-{}-机的应用已经完全被电子计算-{}-机所取代', 'zh-hk'))
 在現代，機械計算機的應用已經完全被電子計算機所取代
->>> print(convert_for_mw(u'-{zh-hant:資訊工程;zh-hans:计算机工程学;}-是电子工程的一个分支，主要研究计算机软硬件和二者间的彼此联系。', 'zh-tw'))
+>>> print(zhconv.convert_for_mw(u'-{zh-hant:資訊工程;zh-hans:计算机工程学;}-是电子工程的一个分支，主要研究计算机软硬件和二者间的彼此联系。', 'zh-tw'))
 資訊工程是電子工程的一個分支，主要研究計算機軟硬體和二者間的彼此聯繫。
->>> print(convert_for_mw(u'張國榮曾在英國-{zh:利兹;zh-hans:利兹;zh-hk:列斯;zh-tw:里茲}-大学學習。', 'zh-sg'))
+>>> print(zhconv.convert_for_mw(u'張國榮曾在英國-{zh:利兹;zh-hans:利兹;zh-hk:列斯;zh-tw:里茲}-大学學習。', 'zh-sg'))
 张国荣曾在英国利兹大学学习。
->>> print(convert_for_mw('毫米(毫公分)，符號mm，是長度單位和降雨量單位，-{zh-hans:台湾作-{公釐}-或-{公厘}-;zh-hant:港澳和大陸稱為-{毫米}-（台灣亦有使用，但較常使用名稱為毫公分）;zh-mo:台灣作-{公釐}-或-{公厘}-;zh-hk:台灣作-{公釐}-或-{公厘}-;}-。', 'zh-cn'))
+>>> print(zhconv.convert_for_mw('毫米(毫公分)，符號mm，是長度單位和降雨量單位，-{zh-hans:台湾作-{公釐}-或-{公厘}-;zh-hant:港澳和大陸稱為-{毫米}-（台灣亦有使用，但較常使用名稱為毫公分）;zh-mo:台灣作-{公釐}-或-{公厘}-;zh-hk:台灣作-{公釐}-或-{公厘}-;}-。', 'zh-cn'))
 毫米(毫公分)，符号mm，是长度单位和降雨量单位，台湾作公釐或公厘。
 ```
 
@@ -64,9 +64,9 @@ Simple Chinese Conversion Library
 Example:
 
 ```pycon
->>> print(convert(u'我幹什麼不干你事。', 'zh-cn'))
+>>> print(zhconv.convert(u'我幹什麼不干你事。', 'zh-cn'))
 我干什么不干你事。
->>> print(convert(u'人体内存在很多微生物', 'zh-tw'))
+>>> print(zhconv.convert(u'人体内存在很多微生物', 'zh-tw'))
 人體內存在很多微生物
 ```
 
